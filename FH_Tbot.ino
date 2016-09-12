@@ -29,6 +29,10 @@ extern "C" {
 //   NEO_GRB     Pixels are wired for GRB bitstream (most NeoPixel products)
 //   NEO_RGB     Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2)
 //   NEO_RGBW    Pixels are wired for RGBW bitstream (NeoPixel RGBW products)
+
+/*
+ * Blinkers addition, replace ada neopixel library with NeoPixelBus instead.
+ */
 #define PIN D4
 #define NUMPIXELS      6
 NeoPixelBus<NeoGrbFeature, NeoEsp8266Uart800KbpsMethod> strip(6, D4); //6 [pixels on pin d4]
